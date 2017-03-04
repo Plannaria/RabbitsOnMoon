@@ -1,0 +1,70 @@
+﻿<html>
+	<head>
+		<style>
+			@font-face {
+				font-family: Silkscreen;
+				src: url('slkscr.ttf');
+			}
+			body{
+				font-family:Silkscreen;
+			}
+		</style>
+		<title>月兔 - Rabbits On Moon</title>
+		<meta name="description" 
+		content="正在开发中的HTML5轻游戏，关于月球上一群兔子的故事……">
+		<div id='wx_pic' style='margin:0 auto;display:none;'>
+			<img src='image/show.png' />
+		</div>
+		<link rel="SHORTCUT ICON" href="http://www.rabbitsonmoon.com/image/favico.ico">
+	</head>
+	<body style="text-align:center;" bgcolor="#383838">
+		<div id="index" style="position:relative;top:16px;">
+			<img src="image/index.png"/>
+		</div>
+		<div id="play" style="position:absolute;top:168px;">
+			<a href="parkour.html"><img src="image/play.png" /></a>
+		</div>
+		<div id="about" style="position:absolute;top:344px;">
+			<a href="about.html"><img src="image/about.png"/></a>
+		</div>
+		<div style="position:absolute;bottom:16px;right:16px;">
+			<img id="earth" src="image/earth.png"/>
+		</div>
+		<div style="position:absolute;top:16px;left:16px;">
+			<img src="image/moon.png"/>
+		</div>
+		<div style="position:absolute;bottom:16px;right:160px;color:white;">
+			<p>SEND A MESSAGE TO THE EARTH!--></p>
+		</div>
+		<div id="share" style="text-align:center;position:absolute;bottom:0px;right:160px;background-color:a6a6a6;border-radius: 25px 25px 0px 0px;width:320px;height:144px;display:none;">
+			<h2>SHARE</h2>
+			<div style="width:50px;float:left;">&nbsp;</div>
+			<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a></div>
+			<script>window._bd_share_config={"common":{"bdSnsKey":{"tsina":"Rabbits On Moon - HTML5 light game","tqq":"Rabbits On Moon - HTML5 light game","t163":"Rabbits On Moon - HTML5 light game","tsohu":"Rabbits On Moon - HTML5 light game"},"bdText":"Mr.Rabbit, welcome to the moon!","bdMini":"2","bdMiniList":false,"bdPic":"http://www.rabbitsonmoon.com/rabbitred.png","bdStyle":"1","bdSize":"32"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+		</div>
+		<script>
+			var w=window.innerWidth
+			|| document.documentElement.clientWidth
+			|| document.body.clientWidth;
+			document.getElementById("play").style.left=w/2+192;
+			document.getElementById("about").style.left=w/2+184;
+			var h=window.innerHeight
+			|| document.documentElement.clientHeight
+			|| document.body.clientHeight;
+			document.getElementById("index").style.top=h/2-288;
+			document.getElementById("play").style.top=h/2-120;
+			document.getElementById("about").style.top=h/2+56;
+		</script>
+		<script>
+		var earth=document.getElementById("earth");
+		var share=document.getElementById("share");
+		earth.onclick=function(){
+			share.style.display="";
+		}
+		</script>
+		<div style="position:absolute;bottom:16px;">
+		<p>©2016 Yuan XiaoDi</p>
+		</div>
+	</body>
+</html>
+
